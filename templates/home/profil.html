@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml/">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Design Portfolio Template</title>
+    <link rel="stylesheet" type="text/css" href="static/ab/style.css" />
+    <link rel="stylesheet" type="text/css" href="static/ab/nav.css" />
+     <link rel="stylesheet" type="text/css" href="static/ab/profe.css" />
+
+</head>
+
+<body>
+<ul class="topnav">
+  <li><a href="/">Home</a></li>
+  <li><a href="{% url 'nuse' %}">News</a></li>
+  <li><a href="{% url 'prof' %}">profel</a></li>  
+  <li class="right"><a href="{% url 'home' %}">Loguta</a></li> 
+</ul>
+
+<!--profil-->
+<div class="my_por">
+<a href="#"><img src="static/ab/images/loge.png" ></a>
+{% if user_info.image %}
+<h4><a href="{% url 'profl_to' %}">UpdetProfel</a></h4>
+{% else %}
+<h4><a href="{% url 'profl' %}">AddProfel</a></h4>
+{% endif %}
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      {% if user_info.image %}
+      <img src="{{user_info.image.url}}" alt="Avatar" style="width:300px;height:300px;">
+      {% else %}
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+      {% endif %}
+    </div>
+    <div class="flip-card-back">
+      <h4>Foul Name:{{user_info.full_name}}</h4> 
+      <h3>gender:{{user_info.gender}}</h3> 
+      <h6>birthdate:{{user_info.birthdate}}</h6>
+    </div>
+  </div>
+</div>
+<!--profil-->
+
+    <div id="footer">
+        <div class="content">
+
+            <div class="sidebar">
+
+                <a href="#"><img src="static/ab/images/footerbox.png" alt="" border="0" /></a>
+                <a href="#"><img src="static/ab/images/footerbox.png" alt="" border="0" class="noright" /></a>
+
+            </div><!--sidebar-->
+            <div id="left">
+                <h3>SPONSORSHIP FRIENDS</h3>
+                <p><a href="#">Website Templates</a></p>
+                <p><a href="#">Website Builder</a></p>
+                <p><a href="#">Web design</a></p>
+                <p><a href="#">Powerpoint Templates</a></p>
+                <p><a href="#">Hosting Reseller</a></p>
+                <p><a href="#">Dedicated Server Hosting</a></p>
+            </div><!--left-->
+
+            <div id="right">
+                <h3>OUR RESOURCE SITES</h3>
+                <p><a href="#">Branding and Identity </a></p>
+                <p><a href="#">Nature Based CSS Gallery </a></p>
+                <p><a href="#">Free Vector Illustrations</a></p>
+                <p><a href="#">Organic Web Design</a></p>
+                <p><a href="#">Web Design</a></p>
+                <p><a href="#">West Coast Clothing Co</a></p>
+            </div><!--right-->
+
+            <br />
+            <p style="color:white;">&#169; <a href="https://info.icopyright.net/" style="color:#0AE618">Copyright</a>. <script type="text/javascript">document.write(new Date().getFullYear());</script>. <a href="https://www.opensourcetemplates.org/index.html" style="color:#0AE618">Open Source Website Templates</a>. All Rights Reserved. <a href="https://www.opensourcetemplates.org/terms.html" style="color:#0AE618">Terms</a> | <a href="https://www.opensourcetemplates.org/sitemap.html" style="color:#0AE618">Site Map</a> | <a href="https://themeruler.com/" style="color:#0AE618">More Themes</a></p>
+
+
+
+        </div><!--content-->
+
+    </div><!--footer-->
+
+    <script type='text/javascript'>
+        $(document).ready(function () {
+
+            $("div#topline a").click(function () {
+                $("#top").slideToggle("slow");
+                $(this).toggleClass("active");
+            });
+
+        });
+    </script>
+</body>
+</html>

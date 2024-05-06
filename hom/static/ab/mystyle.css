@@ -1,0 +1,65 @@
+.siga {
+    color: rgba(35, 151, 137, 0.951);
+    margin: 25px 50px 75px 100px;
+    height: 35px;
+    width: 70px;
+    border: 5px solid rgb(43, 120, 188)
+}
+
+#id_password {
+    border: 5px solid rgb(43, 120, 188)
+}
+
+#id_username {
+    border: 5px solid rgb(43, 120, 188)
+}
+
+label {
+    font-size: 20px;
+    margin: 25px 50px 75px 100px;
+    color: hsla(36, 91%, 39%, 0.953);
+}
+
+.sig {
+    margin: 25px 50px 75px 100px;
+}
+
+#id_password1 {
+    border: 5px solid rgb(43, 120, 188)
+}
+
+#id_password2 {
+    border: 5px solid rgb(43, 120, 188)
+}
+
+#id_email {
+    border: 5px solid rgb(43, 120, 188)
+}
+
+#id_full_name {
+    color: hwb(37 86% 7% / 0.953);
+    font-size: 20px;
+    background: #151d30;
+    border-style: none;
+}
+
+#id_gender {
+    color: hwb(37 86% 7% / 0.953);
+    font-size: 20px;
+    background: #151d30;
+    border-style: none;
+}
+
+#id_birthdate {
+    color: hwb(37 86% 7% / 0.953);
+    font-size: 20px;
+    background: #151d30;
+    border-style: none;
+}
+
+#id_image {
+    color: hwb(37 86% 7% / 0.953);
+    font-size: 20px;
+    background: #151d30;
+    border-style: none;
+}
